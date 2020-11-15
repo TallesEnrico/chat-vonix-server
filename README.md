@@ -1,7 +1,7 @@
 # Requisitos
 #### * Versão do Node utilizada: 14.2 
 #### * Rodar primeiro o servidor Node e logo após o servidor Vue
-#### * O servidor Vue se encontra no repositório 
+#### * O servidor Vue encontra-se no repositório 'https://github.com/TallesEnrico/chat-vonix-vue'
 
 
 # Para Rodar o servidor Node
