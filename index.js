@@ -8,7 +8,6 @@ app.use(cors())
 var cpfs = []
 var historicoConversa = []
 
-
 //Rota para validar login de acesso por CPF
 app.post('/logar', function(req, res){
   let cpf = req.query.cpf
@@ -17,6 +16,7 @@ app.post('/logar', function(req, res){
   else res.json({ acesso: 'liberado' })
 });
 
+//Conexões para o Chat
 io.on('connection', function(socket){
   //Escutando Mensagens
   socket.on('chat', function(msg){
