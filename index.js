@@ -18,8 +18,10 @@ app.post('/logar', function(req, res){
 
 //Conexões para o Chat
 io.on('connection', function(socket){
+
   //Escutando Mensagens
   socket.on('chat', function(msg){
+
     //Tratando e enviando mensagens response
     msg = msg + getHorario()
     historicoConversa.push(msg)
@@ -28,6 +30,7 @@ io.on('connection', function(socket){
 
   //Escutando logout
   socket.on('logout', function(msg){
+    
     //Alterando status do usuário para offline
     let cpf = msg.split('&%')[0]
     cpfs.forEach(element => {
